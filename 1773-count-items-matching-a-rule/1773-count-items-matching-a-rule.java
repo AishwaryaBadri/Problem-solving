@@ -8,28 +8,23 @@ class Solution {
           
               List<String> innerList=items.get(i);
            //   System.out.println("s-->"+s+"  s.equals(ruleValue)"+s.equals(ruleValue));
-              if(ruleKey.equals("type"))
+              if(ruleKey.equals("type") && innerList.get(0).equals(ruleValue))
               {
                  
-                  //check in 0 index
-                  if(innerList.get(0).equals(ruleValue))
-                  {
-                      matches++;
-                  }
-              }else if(ruleKey.equals("color"))
+                  matches++;
+                  
+              }else if(ruleKey.equals("color")  && innerList.get(1).equals(ruleValue))
               {
                 
-                  if(innerList.get(1).equals(ruleValue))
-                  {
+                  
                       matches++;
-                  } 
-              }else if(ruleKey.equals("name"))
+                  
+              }else if(ruleKey.equals("name")  && innerList.get(2).equals(ruleValue))
               {
                   
-                  if(innerList.get(2).equals(ruleValue))
-                  {
+                  
                       matches++;
-                  } 
+                   
                   
               }
               
