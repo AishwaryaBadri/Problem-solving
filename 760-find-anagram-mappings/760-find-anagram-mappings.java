@@ -10,7 +10,7 @@ class Solution {
                 if(nums1[i]==nums2[j])
                 {
                      mapping[i]=j;
-                    break innerloop;
+                    break;
                 }
             }
            
