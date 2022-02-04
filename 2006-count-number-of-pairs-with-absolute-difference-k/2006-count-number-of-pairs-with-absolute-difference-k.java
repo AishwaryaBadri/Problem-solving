@@ -6,8 +6,8 @@ class Solution {
         {
             for(int j=i+1; j<nums.length;j++)
             {
-                n= nums[i]-nums[j];
-                if(Math.abs(n)==k)
+               // n= nums[i]-nums[j];
+                if(Math.abs(nums[i]-nums[j])==k)
                 {
                    numberOfPairs++; 
                 }
