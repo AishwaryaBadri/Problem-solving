@@ -12,7 +12,7 @@ class Solution {
                 sum=0;
                 for(int i=0; i< len; i++)
                 { 
-                    System.out.println("s[i]" + s[i]);
+                    
                     sum= sum +  Integer.valueOf(s[i]);
                 }
                  s=(String.valueOf(sum)).split("");
