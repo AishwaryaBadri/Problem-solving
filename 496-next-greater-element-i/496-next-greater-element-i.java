@@ -9,7 +9,7 @@ class Solution {
             {
                 if(nums2[j]==nums1[i])
                 {
-                    System.out.println("j-->"+j);
+                  //  System.out.println("j-->"+j);
                      int[] subArray; 
                   if(j+1 >= nums2.length-1)
                   {
@@ -22,7 +22,7 @@ class Solution {
                       subArray= Arrays.copyOfRange(nums2, j+1, nums2.length);
                   }
                        
-                   System.out.println("subArray->"+subArray);
+               //    System.out.println("subArray->"+subArray);
               
                     
                     for(int k=0; k< subArray.length;k++)
