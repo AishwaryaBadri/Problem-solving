@@ -22,7 +22,7 @@ class Solution {
 
       
       if(entry.getValue() == 1) {
-        System.out.println("The key for value "+ entry.getKey());
+       
          op= entry.getKey();
         break;
       }
