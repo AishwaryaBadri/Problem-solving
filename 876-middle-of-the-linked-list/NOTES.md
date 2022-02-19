@@ -1,0 +1,1 @@
+why do you need to initialise list node as 1--?
