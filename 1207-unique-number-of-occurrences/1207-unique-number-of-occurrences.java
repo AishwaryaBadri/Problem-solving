@@ -19,13 +19,10 @@ class Solution {
             if(hm.get(arr[i])==null)
             {
                 hm.put(arr[i],occurances);
-            }else
-            {
-                occurances= hm.get(arr[i])+occurances;
             }
             
         }
-        
+        System.out.println("hm-->"+hm);
         for(Integer key :hm.keySet())
         {
             if(!lst.contains(hm.get(key)))
