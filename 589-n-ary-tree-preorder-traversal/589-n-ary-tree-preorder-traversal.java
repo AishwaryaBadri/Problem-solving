@@ -18,24 +18,19 @@ class Node {
 */
 
 class Solution {
-    public void preorder(Node root, List<Integer> answer) {
-        if(root==null)
-        {
-            return;
-        }
-        
-        //parent ,left , right
-        answer.add(root.val);
-        
-        for(Node child :root.children)
-        {
-            preorder(child,answer);
-        }
-        
-        
-        
-        
+ 
+  public void preorder(Node root,List<Integer> answer) {
+      if(root==null)
+      {
+          return;
+      }
+      answer.add(root.val);
+    for(Node node: root.children)
+    {
+        preorder(node,answer);
     }
+  }
+    
     
      public List<Integer> preorder(Node root) {
         List<Integer> answer=new ArrayList<Integer>();
