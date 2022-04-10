@@ -14,31 +14,29 @@
  * }
  */
 class Solution {
+    int sum=0;
     
-      int sum=0;
-    public void rangeSumBST123(TreeNode root, int low, int high)
-    {
-      
-        if(root==null)
-        {
-            return;
-        }
-        if( root.val >= low )
-        {
-            if( root.val <= high){
-                sum=sum+root.val;
-            }
-                
-        }
-         rangeSumBST123(root.left,low,high);
-        rangeSumBST123(root.right,low,high);
-       
-       
-    }
+    
+     public void rangeSumBST(TreeNode root, int low, int high,List<Integer> answer) {
+         
+         if(root==null)
+         {
+             return;
+         }  
+         if(root.val >=low  && root.val <= high)
+         {
+             sum=sum+root.val;
+         }
+         rangeSumBST(root.left,low,high,answer);
+      //   answer.add(root.val);
+          rangeSumBST(root.right,low,high,answer);
+         
+         
+     }
     
     public int rangeSumBST(TreeNode root, int low, int high) {
-        rangeSumBST123(root,low,high);
-         
-         return sum;
+        List<Integer> answer=new ArrayList<Integer>();
+        rangeSumBST(root,low,high,answer);
+        return sum;
     }
 }
